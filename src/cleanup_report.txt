@@ -1,0 +1,251 @@
+================================================================================
+BaramijX Project - File Usage & Cleanup Report
+Generated: February 21, 2026
+================================================================================
+
+ENTRY POINTS & MAIN FILES
+--------------------------
+/App.tsx                                     Active - Main application entry point
+/styles/globals.css                          Active - Global styles and Tailwind config
+/public/robots.txt                           Active - SEO crawler directives
+/public/sitemap.xml                          Active - SEO sitemap
+
+DOCUMENTATION FILES
+-------------------
+/README.md                                   Active - Project overview
+/Attributions.md                             Active - Third-party credits
+/Project_Documentation.md                    Active - Technical documentation
+/SEO_GUIDE.md                                Active - SEO implementation guide
+/guidelines/Guidelines.md                    Active - Development guidelines
+/dependencies.txt                            Active - Dependencies list (just created)
+
+CORE COMPONENTS (Used in Pages)
+--------------------------------
+/components/About.tsx                        Active - Used in HomePage
+/components/Blog.tsx                         Active - Used in HomePage
+/components/Contact.tsx                      Active - Contact form component
+/components/Footer.tsx                       Active - Used in App.tsx layout
+/components/GridDistortion.tsx               Active - Used in Hero component
+/components/Hero.tsx                         Active - Used in HomePage
+/components/Navbar.tsx                       Active - Used in App.tsx layout
+/components/SEO.tsx                          Active - SEO meta tags component
+/components/Services.tsx                     Active - Used in HomePage
+/components/TextPressureEffect.tsx           Active - Used in Footer
+/components/CookieBanner.tsx                 Active - Used in App.tsx
+/components/figma/ImageWithFallback.tsx      Active - Image fallback component
+
+UNUSED COMPONENTS
+-----------------
+/components/CardNav.tsx                      Unused - Defined but never imported/used
+/components/CurvedLoop.tsx                   Unused - Exported but never imported
+/components/DecryptedText.tsx                Unused - Exported but never imported
+/components/DomeGallery.tsx                  Unused - Exported but never imported
+/components/Pricing.tsx                      Unused - Defined but never imported
+/components/Team.tsx                         Unused - Exported but never imported
+
+ACTIVE UI COMPONENTS (Currently Used)
+--------------------------------------
+/components/ui/button.tsx                    Active - Used in 15+ files
+/components/ui/dialog.tsx                    Active - Used in CookieBanner
+/components/ui/input.tsx                     Active - Used in Contact, AllBlogs, etc.
+/components/ui/sonner.tsx                    Active - Toast notifications (App.tsx)
+/components/ui/switch.tsx                    Active - Used in CookieBanner
+/components/ui/textarea.tsx                  Active - Used in Contact forms
+/components/ui/utils.ts                      Active - cn() utility used everywhere
+
+UNUSED UI COMPONENTS
+--------------------
+/components/ui/accordion.tsx                 Unused - No imports found
+/components/ui/alert-dialog.tsx              Unused - No imports found
+/components/ui/alert.tsx                     Unused - No imports found
+/components/ui/aspect-ratio.tsx              Unused - No imports found
+/components/ui/avatar.tsx                    Unused - No imports found
+/components/ui/badge.tsx                     Unused - No imports found
+/components/ui/breadcrumb.tsx                Unused - No imports found
+/components/ui/calendar.tsx                  Unused - No imports found
+/components/ui/card.tsx                      Unused - No imports found
+/components/ui/carousel.tsx                  Unused - No imports found
+/components/ui/chart.tsx                     Unused - No imports found
+/components/ui/checkbox.tsx                  Unused - No imports found
+/components/ui/collapsible.tsx               Unused - No imports found
+/components/ui/command.tsx                   Unused - No imports found
+/components/ui/context-menu.tsx              Unused - No imports found
+/components/ui/drawer.tsx                    Unused - No imports found
+/components/ui/dropdown-menu.tsx             Unused - No imports found
+/components/ui/form.tsx                      Unused - No imports found
+/components/ui/hover-card.tsx                Unused - No imports found
+/components/ui/input-otp.tsx                 Unused - No imports found
+/components/ui/label.tsx                     Unused - No imports found
+/components/ui/menubar.tsx                   Unused - No imports found
+/components/ui/navigation-menu.tsx           Unused - No imports found
+/components/ui/pagination.tsx                Unused - No imports found
+/components/ui/popover.tsx                   Unused - No imports found
+/components/ui/progress.tsx                  Unused - No imports found
+/components/ui/radio-group.tsx               Unused - No imports found
+/components/ui/resizable.tsx                 Unused - No imports found
+/components/ui/scroll-area.tsx               Unused - No imports found
+/components/ui/select.tsx                    Unused - No imports found
+/components/ui/separator.tsx                 Unused - No imports found
+/components/ui/sheet.tsx                     Unused - No imports found
+/components/ui/sidebar.tsx                   Unused - No imports found
+/components/ui/skeleton.tsx                  Unused - No imports found
+/components/ui/slider.tsx                    Unused - No imports found
+/components/ui/table.tsx                     Unused - No imports found
+/components/ui/tabs.tsx                      Unused - No imports found
+/components/ui/toggle-group.tsx              Unused - No imports found
+/components/ui/toggle.tsx                    Unused - No imports found
+/components/ui/tooltip.tsx                   Unused - No imports found
+/components/ui/use-mobile.ts                 Unused - Only imported by unused sidebar.tsx
+
+ACTIVE PAGES (Routed in App.tsx)
+---------------------------------
+/pages/AboutPage.tsx                         Active - /about route
+/pages/AllBlogs.tsx                          Active - /blog route
+/pages/AllServices.tsx                       Active - /services route
+/pages/BusinessConsulting.tsx                Active - Service page route
+/pages/ContactPage.tsx                       Active - /contact route
+/pages/CookiePolicy.tsx                      Active - /cookie-policy route
+/pages/DigitalMarketingSEO.tsx               Active - Service page route
+/pages/Disclaimer.tsx                        Active - /disclaimer route
+/pages/GetQuotePage.tsx                      Active - /get-quote route
+/pages/HomePage.tsx                          Active - / root route
+/pages/InfrastructureManagement.tsx          Active - Service page route
+/pages/PrivacyPolicy.tsx                     Active - /privacy-policy route
+/pages/TermsOfService.tsx                    Active - /terms-of-service route
+/pages/WebEcommerceSolutions.tsx             Active - Service page route
+
+ACTIVE BLOG PAGES (Routed in App.tsx)
+--------------------------------------
+/pages/blog/AIPracticalApplications.tsx      Active - Blog post route
+/pages/blog/CloudMigrationGuide.tsx          Active - Blog post route
+/pages/blog/CybersecurityBestPractices.tsx   Active - Blog post route
+/pages/blog/DataAnalyticsROI.tsx             Active - Blog post route
+/pages/blog/DigitalTransformation2025.tsx    Active - Blog post route
+/pages/blog/RemoteWorkTechnology.tsx         Active - Blog post route
+
+DATA FILES
+----------
+/data/blogData.ts                            Active - Blog post metadata
+
+LIBRARY FILES
+-------------
+/lib/three.ts                                Active - Three.js singleton wrapper
+/lib/chatbot-context.ts                      Unused - AI chatbot removed from project
+
+BROKEN/DEPRECATED FILES
+-----------------------
+/lib/chatbot-context.ts                      Broken - References removed AI chatbot feature
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Total Files:                  95
+Active Files:                 50 (52.6%)
+Unused Files:                 44 (46.3%)
+Broken/Deprecated Files:      1  (1.1%)
+
+Active Components:            12
+Unused Components:            6
+Active UI Components:         7
+Unused UI Components:         38
+
+================================================================================
+SAFE TO DELETE
+================================================================================
+
+The following files can be safely removed without breaking the project:
+
+UNUSED COMPONENTS (6 files)
+----------------------------
+/components/CardNav.tsx
+/components/CurvedLoop.tsx
+/components/DecryptedText.tsx
+/components/DomeGallery.tsx
+/components/Pricing.tsx
+/components/Team.tsx
+
+UNUSED UI COMPONENTS (39 files)
+--------------------------------
+/components/ui/accordion.tsx
+/components/ui/alert-dialog.tsx
+/components/ui/alert.tsx
+/components/ui/aspect-ratio.tsx
+/components/ui/avatar.tsx
+/components/ui/badge.tsx
+/components/ui/breadcrumb.tsx
+/components/ui/calendar.tsx
+/components/ui/card.tsx
+/components/ui/carousel.tsx
+/components/ui/chart.tsx
+/components/ui/checkbox.tsx
+/components/ui/collapsible.tsx
+/components/ui/command.tsx
+/components/ui/context-menu.tsx
+/components/ui/drawer.tsx
+/components/ui/dropdown-menu.tsx
+/components/ui/form.tsx
+/components/ui/hover-card.tsx
+/components/ui/input-otp.tsx
+/components/ui/label.tsx
+/components/ui/menubar.tsx
+/components/ui/navigation-menu.tsx
+/components/ui/pagination.tsx
+/components/ui/popover.tsx
+/components/ui/progress.tsx
+/components/ui/radio-group.tsx
+/components/ui/resizable.tsx
+/components/ui/scroll-area.tsx
+/components/ui/select.tsx
+/components/ui/separator.tsx
+/components/ui/sheet.tsx
+/components/ui/sidebar.tsx
+/components/ui/skeleton.tsx
+/components/ui/slider.tsx
+/components/ui/table.tsx
+/components/ui/tabs.tsx
+/components/ui/toggle-group.tsx
+/components/ui/toggle.tsx
+/components/ui/tooltip.tsx
+/components/ui/use-mobile.ts
+
+DEPRECATED LIBRARY (1 file)
+----------------------------
+/lib/chatbot-context.ts
+
+TOTAL FILES SAFE TO DELETE: 46 files
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. IMMEDIATE CLEANUP (High Priority)
+   - Remove /lib/chatbot-context.ts (deprecated chatbot code)
+   - Remove unused main components (CardNav, CurvedLoop, etc.) - 6 files
+
+2. UI LIBRARY CLEANUP (Medium Priority)
+   - Remove 39 unused UI components to reduce bundle size
+   - This will eliminate ~40% of unused code in the project
+   - Keep only: button, dialog, input, sonner, switch, textarea, utils
+
+3. BENEFITS OF CLEANUP
+   - Reduced bundle size (estimated 200-300KB savings)
+   - Faster build times
+   - Easier code maintenance
+   - Less confusion for developers
+   - Improved performance
+
+4. BEFORE DELETING
+   - Ensure all imports are checked
+   - Run build to confirm no breakages
+   - Commit current state to version control
+   - Create a backup branch
+
+5. FUTURE CONSIDERATIONS
+   - If you need any of these UI components later, they can be re-added
+   - Consider creating a "archived-components" branch before deletion
+   - Update dependencies.txt after cleanup
+
+================================================================================
+END OF CLEANUP REPORT
+================================================================================

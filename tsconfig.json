@@ -1,0 +1,159 @@
+{
+    "compilerOptions": {
+        /* ── Target & Module ────────────────────────────────── */
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        /* ── Module Resolution (Vite / bundler mode) ────────── */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+        /* ── JSX — needed so TypeScript understands JSX/TSX ─── */
+        "jsx": "react-jsx",
+        /* ── Strict type-checking ───────────────────────────── */
+        "strict": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true,
+        /* ── Path aliases (mirror vite.config.ts resolve.alias) */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            /* Versioned package aliases — mirror vite.config.ts  */
+            "vaul@*": [
+                "./node_modules/vaul/dist/index.d.ts"
+            ],
+            "sonner@*": [
+                "./node_modules/sonner/dist/index.d.ts"
+            ],
+            "recharts@*": [
+                "./node_modules/recharts/types/index.d.ts"
+            ],
+            "react-resizable-panels@*": [
+                "./node_modules/react-resizable-panels/dist/declarations/src/index.d.ts"
+            ],
+            "react-hook-form@*": [
+                "./node_modules/react-hook-form/dist/index.esm.mjs"
+            ],
+            "react-day-picker@*": [
+                "./node_modules/react-day-picker/dist/index.d.ts"
+            ],
+            "next-themes@*": [
+                "./node_modules/next-themes/dist/index.d.ts"
+            ],
+            "lucide-react@*": [
+                "./node_modules/lucide-react/dist/lucide-react.d.ts"
+            ],
+            "input-otp@*": [
+                "./node_modules/input-otp/dist/index.d.ts"
+            ],
+            "embla-carousel-react@*": [
+                "./node_modules/embla-carousel-react/esm/index.d.ts"
+            ],
+            "cmdk@*": [
+                "./node_modules/cmdk/dist/index.d.ts"
+            ],
+            "class-variance-authority@*": [
+                "./node_modules/class-variance-authority/dist/index.d.ts"
+            ],
+            "@radix-ui/react-tooltip@*": [
+                "./node_modules/@radix-ui/react-tooltip/dist/index.d.ts"
+            ],
+            "@radix-ui/react-toggle@*": [
+                "./node_modules/@radix-ui/react-toggle/dist/index.d.ts"
+            ],
+            "@radix-ui/react-toggle-group@*": [
+                "./node_modules/@radix-ui/react-toggle-group/dist/index.d.ts"
+            ],
+            "@radix-ui/react-tabs@*": [
+                "./node_modules/@radix-ui/react-tabs/dist/index.d.ts"
+            ],
+            "@radix-ui/react-switch@*": [
+                "./node_modules/@radix-ui/react-switch/dist/index.d.ts"
+            ],
+            "@radix-ui/react-slot@*": [
+                "./node_modules/@radix-ui/react-slot/dist/index.d.ts"
+            ],
+            "@radix-ui/react-slider@*": [
+                "./node_modules/@radix-ui/react-slider/dist/index.d.ts"
+            ],
+            "@radix-ui/react-separator@*": [
+                "./node_modules/@radix-ui/react-separator/dist/index.d.ts"
+            ],
+            "@radix-ui/react-select@*": [
+                "./node_modules/@radix-ui/react-select/dist/index.d.ts"
+            ],
+            "@radix-ui/react-scroll-area@*": [
+                "./node_modules/@radix-ui/react-scroll-area/dist/index.d.ts"
+            ],
+            "@radix-ui/react-radio-group@*": [
+                "./node_modules/@radix-ui/react-radio-group/dist/index.d.ts"
+            ],
+            "@radix-ui/react-progress@*": [
+                "./node_modules/@radix-ui/react-progress/dist/index.d.ts"
+            ],
+            "@radix-ui/react-popover@*": [
+                "./node_modules/@radix-ui/react-popover/dist/index.d.ts"
+            ],
+            "@radix-ui/react-navigation-menu@*": [
+                "./node_modules/@radix-ui/react-navigation-menu/dist/index.d.ts"
+            ],
+            "@radix-ui/react-menubar@*": [
+                "./node_modules/@radix-ui/react-menubar/dist/index.d.ts"
+            ],
+            "@radix-ui/react-label@*": [
+                "./node_modules/@radix-ui/react-label/dist/index.d.ts"
+            ],
+            "@radix-ui/react-hover-card@*": [
+                "./node_modules/@radix-ui/react-hover-card/dist/index.d.ts"
+            ],
+            "@radix-ui/react-dropdown-menu@*": [
+                "./node_modules/@radix-ui/react-dropdown-menu/dist/index.d.ts"
+            ],
+            "@radix-ui/react-dialog@*": [
+                "./node_modules/@radix-ui/react-dialog/dist/index.d.ts"
+            ],
+            "@radix-ui/react-context-menu@*": [
+                "./node_modules/@radix-ui/react-context-menu/dist/index.d.ts"
+            ],
+            "@radix-ui/react-collapsible@*": [
+                "./node_modules/@radix-ui/react-collapsible/dist/index.d.ts"
+            ],
+            "@radix-ui/react-checkbox@*": [
+                "./node_modules/@radix-ui/react-checkbox/dist/index.d.ts"
+            ],
+            "@radix-ui/react-avatar@*": [
+                "./node_modules/@radix-ui/react-avatar/dist/index.d.ts"
+            ],
+            "@radix-ui/react-aspect-ratio@*": [
+                "./node_modules/@radix-ui/react-aspect-ratio/dist/index.d.ts"
+            ],
+            "@radix-ui/react-alert-dialog@*": [
+                "./node_modules/@radix-ui/react-alert-dialog/dist/index.d.ts"
+            ],
+            "@radix-ui/react-accordion@*": [
+                "./node_modules/@radix-ui/react-accordion/dist/index.d.ts"
+            ]
+        }
+    },
+    "include": [
+        "src",
+        "vite.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "php"
+    ]
+}
