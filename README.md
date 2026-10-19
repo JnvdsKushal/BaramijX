@@ -1,4 +1,3 @@
-::: {align="center"}
 # BaramijX
 
 ### Digital Consultancy & Technology Services Website
