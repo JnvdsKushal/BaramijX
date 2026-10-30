@@ -25,6 +25,8 @@ import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
 import Disclaimer from "./pages/Disclaimer";
 import NotFoundPage from "./pages/NotFoundPage";
+import POSServices from "./pages/POSServices";
+import AutoSuite from "./pages/AutoSuite";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -69,6 +71,8 @@ export default function App() {
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="*" element={<NotFoundPage />} />
+            <Route path="/services/pos-services" element={<POSServices />} />
+            <Route path="/services/auto-suite" element={<AutoSuite />} />
           </Routes>
         </main>
         <Footer />

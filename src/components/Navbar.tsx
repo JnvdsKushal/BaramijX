@@ -136,6 +136,8 @@ export default function Navbar() {
     { label: "Web & E-commerce Solutions", route: "/services/web-ecommerce-solutions" },
     { label: "Business Consulting", route: "/services/business-consulting" },
     { label: "Infrastructure Management", route: "/services/infrastructure-management" },
+    { label: "POS Services", route: "/services/pos-services" },
+    { label: "Auto Suite", route: "/services/auto-suite" },
     { label: "View All Services", route: "/services", featured: true },
   ];
 

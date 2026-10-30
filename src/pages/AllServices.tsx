@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Search, ShoppingCart, Briefcase, Server, ArrowRight, Filter } from "lucide-react";
+import { Search, ShoppingCart, Briefcase, Server, Store, Car, ArrowRight, Filter } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { useState } from "react";
@@ -56,6 +56,28 @@ const allServices = [
     route: "/services/infrastructure-management",
     features: ["Cloud Migration", "System Monitoring", "Security Management", "Disaster Recovery"],
   },
+  {
+  id: 5,
+  icon: Store,
+  title: "POS Services",
+  description: "Business-focused Point of Sale solutions designed to simplify transactions and everyday operations across industries.",
+  longDescription: "Point of Sale solutions scoped around your workflow, covering billing, sales tracking, inventory visibility, and reporting.",
+  category: "Technology",
+  image: "", // set to "/pos-services-hero.webp" once the asset exists
+  route: "/services/pos-services",
+  features: ["Billing & Transactions", "Sales Tracking", "Inventory Visibility", "Business Reporting"],
+},
+{
+  id: 6,
+  icon: Car,
+  title: "Auto Suite",
+  description: "Automotive software solutions for vehicle sales, inventory, customer management, billing, and business operations.",
+  longDescription: "Software solutions for dealerships, showrooms, spare-parts retailers, and workshops, tailored to your requirements.",
+  category: "Technology",
+  image: "", // uses the gradient fallback added for POS; set a real path when an asset exists
+  route: "/services/auto-suite",
+  features: ["Dealership Management", "Vehicle Inventory", "Automotive CRM", "Reporting & Analytics"],
+},
 ];
 
 const categories = [
@@ -84,7 +106,7 @@ export default function AllServices() {
     <div className="min-h-screen bg-background">
       <SEO
         title="Our Services - Digital & IT Solutions"
-        description="Explore BaramijX's full range of services including Digital Marketing, Web Development, Business Consulting, and Infrastructure Management."
+        description="Explore BaramijX's services, including Digital Marketing, Web Development, Business Consulting, Infrastructure Management, and POS Solutions."
         canonical="https://baramijx.com/services"
       />
 
@@ -100,7 +122,15 @@ export default function AllServices() {
             { "@type": "ListItem", "position": 1, "name": "Digital Marketing & SEO", "url": "https://baramijx.com/services/digital-marketing-seo" },
             { "@type": "ListItem", "position": 2, "name": "Web & E-commerce Solutions", "url": "https://baramijx.com/services/web-ecommerce-solutions" },
             { "@type": "ListItem", "position": 3, "name": "Business Consulting", "url": "https://baramijx.com/services/business-consulting" },
-            { "@type": "ListItem", "position": 4, "name": "Infrastructure Management", "url": "https://baramijx.com/services/infrastructure-management" }
+            { "@type": "ListItem", "position": 4, "name": "Infrastructure Management", "url": "https://baramijx.com/services/infrastructure-management" },
+            {
+  "@type": "ListItem",
+  "position": 5,
+  "name": "POS Services",
+  "url": "https://baramijx.com/services/pos-services"
+},
+{ "@type": "ListItem", "position": 6, "name": "Auto Suite", "url": "https://baramijx.com/services/auto-suite" }
+
           ]
         })
       }} />
@@ -109,7 +139,9 @@ export default function AllServices() {
         <a href="/services/digital-marketing-seo">SEO & Digital Marketing</a>{' | '}
         <a href="/services/web-ecommerce-solutions">Web Design & E-commerce</a>{' | '}
         <a href="/services/business-consulting">Business Consulting</a>{' | '}
-        <a href="/services/infrastructure-management">IT Infrastructure & Cloud</a>
+        <a href="/services/infrastructure-management">IT Infrastructure & Cloud</a>{' | '}
+        <a href="/services/pos-services">POS Services</a>{' | '}
+        <a href="/services/auto-suite">Auto Suite</a>
       </noscript>
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] min-h-[500px] bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden">
@@ -202,12 +234,16 @@ export default function AllServices() {
                 <div className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-border group h-full">
                   {/* Service Image */}
                   <div className="relative h-64 overflow-hidden">
-                    <ImageWithFallback
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                    />
+                    {service.image ? (
+  <ImageWithFallback
+    src={service.image}
+    alt={service.title}
+    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+    loading="lazy"
+  />
+) : (
+  <div className="w-full h-full bg-gradient-to-br from-[#1E3A8A] to-[#2563EB]" />
+)}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className="absolute top-4 right-4">
                       <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
