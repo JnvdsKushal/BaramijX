@@ -4,10 +4,11 @@ import { CheckCircle2, Store, Receipt, Package, BarChart3, Layers, ArrowRight, C
 import { Link } from "react-router-dom";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import SEO from "../components/SEO";
+import posServicesHero from "../public/image/services/all-services/pos-services-hero.png";
 
 // Set to the public path of the real asset once it exists, e.g. "/pos-services-hero.webp".
 // While null, the hero shows a branded placeholder panel instead of a broken image.
-const HERO_IMAGE: string | null = null;
+const HERO_IMAGE = posServicesHero;
 const HERO_ALT = "Modern point of sale terminal in a professional business environment";
 
 export default function POSServices() {
